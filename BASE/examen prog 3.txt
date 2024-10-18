@@ -1,0 +1,45 @@
+package ejem1;
+
+public class veh {
+	  public String NombreCliente;
+	  public String Placa;
+	  public String Descripcion;
+	  public String Estado;
+	  
+	  //Metodos Fijadores
+	  public void setNombre(String nombre)
+	  {
+		  NombreCliente = nombre;
+	  }
+	  public void setPlaca(String placa)
+	  {
+		  Placa = placa;
+	  }
+	  public void setDescripcion(String descripcion)
+	  {
+		  Descripcion = descripcion;
+	  }
+	  public void setEstado(String estado)
+	  {
+		  Estado = estado;
+	  }
+	  //Metodos Selectores
+	  public String getNombre()
+	  {
+		  return NombreCliente;
+	  }
+	  public String getPlaca()
+	  {
+		  return Placa;
+	  }
+	  public String getDescripcion()
+	  {
+		  return Descripcion;
+	  }
+	  public String getEstado()
+	  {
+		  return Estado;
+	  }
+	  
+	  
+}

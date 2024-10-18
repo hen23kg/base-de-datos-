@@ -1,0 +1,49 @@
+package ejem1;
+import java.util.*;
+
+public class vehiculo {
+
+	public static void main(String[] args) {
+		 
+		Scanner leer = new Scanner(System.in);
+	       int opcion; //Guardaremos la opcion del usuario
+	       opcion = 0;
+	       while(opcion!=4){
+	    	   System.out.println("**Menú**");
+	           System.out.println("1. Registrar un vehiculo");
+	           System.out.println("2. Listar Vehiculos");
+	           System.out.println("3. Modificar el estado");
+	           System.out.println("4. Salir");
+	            
+	           System.out.println("Ingresa una de las opciones");
+	           opcion = leer.nextInt();
+	           //Creamos el objeto de la clase
+	           veh v1 = new veh();
+	           if(opcion==1){
+	        	   			System.out.println("1. Registro de vehiculo");
+	        	   			System.out.println("Ingrese el nombre del Cliente");
+	        	   			v1.setNombre(leer.next());
+	        	   			System.out.println("Ingrese los datos la placa");
+	        	   			v1.setPlaca(leer.next());
+	        	   			System.out.println("Ingrese un descripcion del Vehículo");
+	        	   			v1.setDescripcion(leer.next());
+	        	   			v1.setEstado("P");
+	           }
+	           if(opcion==2) {
+	        		   System.out.println("2. Lista de Vehículos");
+	        		   System.out.println("Nombre Cliente: "+v1.getNombre());
+	        		   System.out.println("Placa :"+v1.getPlaca());
+	        		   System.out.println("Descripción: "+v1.getDescripcion());
+	        		   System.out.println("Estado: "+v1.getEstado());
+	           }
+	           if(opcion==3) {
+	        		   System.out.println("3. Modificar Estado");
+	        		   v1.setEstado("R");
+	        		   break;
+	           }
+	            
+	       }
+		
+	}
+
+}
